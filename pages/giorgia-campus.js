@@ -203,11 +203,11 @@ const HomePage = () => {
               />
             </div>
             <div className="d-flex justify-content-center">
-              <div className="col-7 col-lg-2 text-center rounded-5 bg-white rounded-5 py-2">
-                <p className="p-0 m-0 movingGiorgiaGradientText">
-                  La soluzione è qui
-                </p>
-              </div>
+              <Link href={'/giorgia-campus/#calendar'}>
+                <Button className="rounded-5 px-4">
+                  <p className="movingGiorgiaGradientText p-0 m-0">La soluzione è qui</p>
+                </Button>
+              </Link>
             </div>
           </Row>
         </Collapse>
@@ -244,11 +244,13 @@ const HomePage = () => {
                   osservare il mondo da più prospettive e questo mi rende…
                   un’ibrida! Ma non intendo l’automobile :)
                 </p>
+                <Link href={'/giorgia-campus/#calendar'}>
                 <Button className="rounded-5 px-4">
                   <p className="movingGiorgiaGradientText p-0 m-0">
                     Contattami
                   </p>
                 </Button>
+                </Link>
               </div>
             </div>
           </Row>
@@ -300,9 +302,11 @@ const HomePage = () => {
                   +2.400.000.000 di impression
                 </h2>
               </div>
-              <Button className="rounded-5 px-4">
-                <p className="movingGiorgiaGradientText p-0 m-0">Scopri come</p>
-              </Button>
+              <Link href={'/giorgia-campus/#calendar'}>
+                <Button className="rounded-5 px-4">
+                  <p className="movingGiorgiaGradientText p-0 m-0">Scopri come</p>
+                </Button>
+              </Link>
             </div>
           </Row>
         </ScaleFade>
@@ -323,6 +327,7 @@ const HomePage = () => {
               <div className="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end p-2">
                 <ReactCompareImage
                   /* vertical */
+                   sliderLineColor="#A00FF6"
                   leftImage="/media/bad-cv.jpeg"
                   rightImage="/media/good-cv.jpeg"
                 />
@@ -349,11 +354,13 @@ const HomePage = () => {
                   bisogna capire cosa l’altro si aspetta da noi. E a volte non
                   basta un buon CV.
                 </p>
+                <Link href={'/giorgia-campus/#calendar'}>
                 <Button className="rounded-5 px-4">
                   <p className="movingGiorgiaGradientText p-0 m-0">
                     Scopri i servizi
                   </p>
                 </Button>
+                </Link>
               </div>
             </div>
           </Row>
@@ -364,7 +371,7 @@ const HomePage = () => {
           className="py-5"
         >
           <Row
-            id="contact"
+            id="calendar"
             data-aos="fade-up"
             className="justify-content-center text-center"
           >

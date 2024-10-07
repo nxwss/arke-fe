@@ -396,7 +396,7 @@ textarea::placeholder {
 @media (min-width: 992px) {
   /* Inserisci le regole CSS per medium */
   .hero-title {
-    font-size: 128px;
+    font-size: 104px;
   }
   .subtitle-hero {
     font-size: 72px;
@@ -407,7 +407,7 @@ textarea::placeholder {
 @media (min-width: 1200px) {
   /* Inserisci le regole CSS per large */
   .hero-title {
-    font-size: 128px;
+    font-size: 104px;
   }
 
   .subtitle-hero {
