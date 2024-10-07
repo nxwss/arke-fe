@@ -1,0 +1,451 @@
+/* IMPORT FONTS AND SETTINGS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black !important;
+}
+
+/* Stile per input e textarea */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  color: white !important; /* Colore del testo */
+}
+
+/* Stile per i placeholder */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: white !important; /* Colore del placeholder */
+}
+
+.css-1xt0hp {
+  color: white !important;
+}
+
+.css-ik0xrm {
+  color: white !important;
+}
+
+.hover-move:hover {
+  /* transform: rotate(60deg); */
+  transform: scale(1.2);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.sticky-header {
+  position: fixed;
+  width: '100%';
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 75%; }
+  50% { background-position: 100% 75%; }
+  100% { background-position: 0% 50%; }
+}
+
+.movingGradientText {
+  /* Applicazione del gradiente al testo */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  background-image: linear-gradient(90deg, rgba(49,173,0,1) 0%, rgba(0,212,255,1) 78%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+
+  /* Applicazione dell'animazione */
+  background-size: 200% 200%;
+  animation: moveGradient 5s linear infinite;
+}
+
+.movingGiorgiaGradientText {
+  /* Applicazione del gradiente al testo */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  background-image: linear-gradient(180deg, rgba(255,35,229,1) 0%, rgba(106,0,255,1) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+
+  /* Applicazione dell'animazione */
+  background-size: 200% 200%;
+  animation: moveGradient 5s linear infinite;
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, rgba(49,173,0,1) 0%, rgba(0,212,255,1) 78%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.logo-image {
+  transition: transform 0.3s ease-in-out; /* Opzionale: se vuoi una transizione anche sull'immagine */
+}
+
+.header-sticky-glass {
+  background: rgba(95, 91, 91, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.footer-sticky-glass {
+  background: rgba(95, 91, 91, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.rounded-all {
+  border-radius: 50%;
+}
+
+.typewriter-container {
+  min-height: 550px;
+  overflow-y: auto;
+}
+
+.css-pv22qu {
+  margin-top: 300px !important;
+}
+
+.css-104xslc {
+  background: rgba(0, 0, 0, 0.758) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.css-1ik4h6n {
+  color: white;
+  background-color: red;
+}
+
+.wa-icon {
+  font-size: 48px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 24px;
+  padding: -8px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  z-index: 2000;
+}
+
+.wa-icon:hover {
+  transform: rotate(30deg);
+  transition: 0.4s ease-in-out;
+}
+
+.case-icon:hover {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.4s ease-in-out;
+}
+
+/* DIFFERENT WEIGHTS */
+.font-thin {
+  font-weight: 100 !important;
+}
+
+.font-extralight {
+  font-weight: 200 !important;
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-regular {
+  font-weight: 400 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.font-extrabold {
+  font-weight: 800 !important;
+}
+
+.font-black {
+  font-weight: 900 !important;
+}
+
+.pt-10 {
+  padding-top: 100px;
+}
+
+.pr-5 {
+  padding-right: 50px;
+}
+
+/* VARIABLES */
+:root {
+  --color-accent: black;
+  --color-accent-light: #A3EBFF;
+  --color-secondary-violet: #8561FF;
+  --color-error: #be2d23;
+  --color-error-light: rgb(251, 168, 172);
+  --color-base-dark: #000000;
+  --color-base-light: #FFFBFB;
+  --color-alert-light: #FCEDD3;
+  --color-alert: #F08233;
+  --color-success: #4BDA92;
+  --color-success-light: #D2FFEA;
+  --color-gray-100: #E7E7E7;
+  --color-gray-300: #ABABB1;
+  --color-gray-400: #8D8D93;
+  --color-gray-700:#151515;
+  --color-alert-superlight: #FFFAF1;
+}
+
+/* COLOR */
+
+.accent {
+  color: var(--color-accent) !important;
+}
+
+.alert-superlight {
+  color: var(--color-alert-superlight) !important;
+}
+
+.accent-light {
+  color: var(--color-accent-light) !important;
+
+}
+
+.error {
+  color: var(--color-error) !important;
+}
+
+.error-light {
+  color: var(--color-error-light) !important;
+}
+
+.base-dark {
+  color: var(--color-base-dark) !important;
+}
+
+.base-light {
+  color: var(--color-base-light) !important;
+}
+
+.alert-light {
+  color: var(--color-alert-light) !important;
+}
+
+.alert {
+  color: var(--color-alert) !important;
+}
+
+.success {
+  color: var(--color-success) !important;
+}
+
+.success-light {
+  color: var(--color-success-light) !important;
+}
+
+.gray-300 {
+  color: var(--color-gray-300) !important;
+}
+
+.dark-gray {
+  color: #242424 !important;
+}
+
+.gray-400 {
+  color: var(--color-gray-400) !important;
+}
+
+.css-qlig70 {
+  color: white;
+  background: #000000 !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* BACKGROUND COLOR */
+
+.back-accent {
+  background-color: var(--color-accent) !important;
+}
+
+.back-accent-light {
+  background-color: var(--color-accent) !important;
+}
+
+.back-alert-superlight {
+  background-color: var(--color-alert-superlight) !important;
+}
+
+.stroke-accent {
+  border: 1px solid var(--color-accent) !important;
+}
+
+.back-accent-light {
+  background-color: var(--color-accent-light) !important;
+}
+
+.back-accent-super-light {
+  background-color: var(--color-accent-super-light) !important;
+}
+
+.back-error {
+  background-color: var(--color-error) !important;
+}
+
+.back-error-light {
+  background-color: var(--color-error-light) !important;
+}
+
+.back-base-dark {
+  background-color: var(--color-base-dark) !important;
+}
+
+.back-base-light {
+  background-color: var(--color-base-light) !important;
+}
+
+.back-alert-light {
+  background-color: var(--color-alert-light) !important;
+}
+
+.back-alert {
+  background-color: var(--color-alert) !important;
+}
+
+.back-success {
+  background-color: var(--color-success) !important;
+}
+
+.back-success-light {
+  background-color: var(--color-success-light) !important;
+}
+
+.back-gray-100 {
+  background-color: var(--color-gray-100) !important;
+}
+
+.back-gray-300 {
+  background-color: var(--color-gray-300) !important;
+}
+
+.back-gray-400 {
+  background-color: var(--color-gray-400) !important;
+}
+
+.back-gray-700 {
+  background-color: var(--color-gray-700) !important;
+}
+
+/* Extra Extra Small (xxs) */
+@media (min-width: 0px) {
+  /* Inserisci le regole CSS per xx-small */
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .subtitle-hero {
+    font-size: 42px;
+  }
+}
+
+/* Extra Small (xs) */
+@media (min-width: 576px) {
+  /* Inserisci le regole CSS per x-small */
+}
+
+/* Small (sm) */
+@media (min-width: 768px) {
+  /* Inserisci le regole CSS per small */
+  .hero-title {
+    font-size: 86px;
+  }
+
+  .subtitle-hero {
+    font-size: 72px;
+  }
+}
+
+/* Medium (md) */
+@media (min-width: 992px) {
+  /* Inserisci le regole CSS per medium */
+  .hero-title {
+    font-size: 128px;
+  }
+  .subtitle-hero {
+    font-size: 72px;
+  }
+}
+
+/* Large (lg) */
+@media (min-width: 1200px) {
+  /* Inserisci le regole CSS per large */
+  .hero-title {
+    font-size: 128px;
+  }
+
+  .subtitle-hero {
+    font-size: 72px;
+  }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1400px) {
+  /* Inserisci le regole CSS per x-large */
+}
+
+/* Extra Extra Large (xxl) */
+@media (min-width: 1600px) {
+  /* Inserisci le regole CSS per xx-large */
+}
+
+.gradient-background {
+  background: linear-gradient(45deg, #00C8FF, #8561FF) !important;
+  background-repeat: no-repeat;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 15px;
+}
+
+.YpEyAf {
+  color: white !important;
+}
+
+.dicono-card {
+  background-color: #1E1E1E;
+  height: 400px;
+}
